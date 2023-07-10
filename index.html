@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Ticket Booking</title>
+    <style>
+        /* CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://cdn.wallpapersafari.com/87/83/aINmBZ.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(10, 10, 10, 0.1);
+        }
+        .heading {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: rgb(233, 12, 12);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #ffffff;
+        }
+        .form-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-section label {
+            font-weight: bold;
+        }
+        .form-section input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+        .form-section input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: rgb(255, 251, 251);
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .result-section {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #f3f3f3;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 200px;
+        }
+        .route-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f8f6f6;
+            text-shadow: 1px 1px 2px rgb(250, 248, 248);
+        }
+
+        /* CSS animations */
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .fade-in {
+            animation: fade-in 1s ease-in;
+        }
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Additional Styles */
+        .feature-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .feature-item {
+            flex-basis: 30%;
+            padding: 10px;
+            background-color: #fffbfb;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #f3eeee;
+        }
+        .feature-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #fffafa;
+        }
+        .one{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="moving"><marquee direction="left" height="20" width="100%" scrollamount="10" scrolldelay="100">
+            Welcome to our Website! Plan your journey now
+          </marquee>
+          </h2><br></br>
+        <div class="logo">
+            <img src="where-bus-logo.png">
+        </div>
+
+        <div class="feature-container">
+            <div class="feature-item">
+                <i class="fa fa-clock-o feature-icon"></i>
+                <h3 class="feature-title">Bus Timings</h3>
+                <p>Find the timings of available buses.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa fa-map-marker feature-icon"></i>
+                <h3 class="feature-title">Bus Stops</h3>
+                <p>Discover the bus stops along the route.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa fa-money feature-icon"></i>
+                <h3 class="feature-title">Fare Information</h3>
+                <p>Know the fare details for different routes.</p>
+            </div>
+        </div>
+            <script>
+            function searchBus() {
+                // Get the path to the new HTML file.
+                var file = "second.html";
+              
+                // Open the new HTML file in a new tab.
+                window.open(file, "_blank");
+              }
+            </script> 
+    <div class="contact-section">
+        <h2 class="route-title">Contact Us</h2>
+        <p>
+            If you have any questions or feedback, please do not hesitate to contact us.
+        </p>
+        <ul align="left">
+            <li>
+                <strong>Email:</strong> <a href="mailto:support@wherebus.com">support@wherebus.com</a>
+            </li>
+            <li>
+                <strong>Phone:</strong> +91 98765 43210
+            </li>
+            <li>
+                <strong>Address:</strong>
+                Abes enginerring college
+            </li>
+        </ul>
+    </div>
+    <p><b><a class="one" href="rot.html" target="_blank">go to next page</a></b></p>
+   
